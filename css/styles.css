@@ -341,11 +341,6 @@ button:hover, button:focus, button:active {
     }
 }
 
-.service-links__item {
-    /* display: inline-block;
-    vertical-align: middle; */
-}
-
 .service-links__item + .service-links__item {
     margin-left: 5px;
     margin-right: 5px;
@@ -708,7 +703,6 @@ footer {
     min-height: 100%;
 }
 
-.review__text {}
 
 .review__text:before,
 .review__text:after {
