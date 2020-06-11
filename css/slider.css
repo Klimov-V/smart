@@ -1,21 +1,25 @@
 .slider {
     position: relative;
+    outline: none;
 }
 
 .slider__slide {
     min-height: 100px;
+    outline: none;
 }
 
 .slider__arrow {
     position: absolute;
     top: 50%;
+    z-index: 2;
     transform: translate(0, -50%);
-    display: none;
+    display: none !important;
 }
 
 @media screen and (min-width: 768px) {
     .slider__arrow {
-        display: block;
+        display: block !important;
+        cursor: pointer;
     }
 }
 
@@ -44,21 +48,25 @@
 
 .slider__dots li {
     display: inline-block;
+    margin: 0 5px;
 }
 
-.slider__dot {
+.slider__dots li button {
     display: inline-block;
     width: 20px;
     height: 6px;
     border-radius: 3px;
     background-color: #d3d3d3;
     border: 1px solid #d3d3d3;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
 }
 
-.slider__dot:hover,
-.slider__dot:focus,
-.slider__dot:active,
-.slider__dot--active {
+.slider__dots li button:hover,
+.slider__dots li button:focus,
+.slider__dots li button:active,
+.slider__dots li.slick-active button {
     background-color: #ff5c36;
     border-color: #ff5c36;
 }
